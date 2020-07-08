@@ -23,7 +23,7 @@ header {
     margin: 30px 0;
 }
 
-header:after {
+/* header:after {
     content: '';
     width: 460px;
     height: 15px;
@@ -31,7 +31,7 @@ header:after {
     display: inline-block;
     text-align: center;
     background-size: 70%;
-}
+} */
 
 h1 {
     color: #fff;
@@ -84,6 +84,7 @@ h2 {
     width: 10%;
     height: 100%;
     background: rgba(255, 255, 255, .8);
+    /* background: #ffffff; */
 }
 
 .key.sharp {
@@ -142,4 +143,53 @@ h2 {
 
 .keys:hover .hints {
     opacity: 1;
+}
+
+footer {
+    color:#ffffff;
+    bottom: 0;
+    position: absolute;
+    width: 100%;
+}
+
+#socials {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.sc-btn {
+    display: inline-block;
+    font-weight: 600;
+    box-sizing: border-box;
+    text-align: center;
+    min-width: 40px;
+    vertical-align: middle;
+    cursor: pointer;
+    user-select: none;
+    padding: 0.375rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: 0.25rem;
+    text-decoration: none;
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+}
+
+.btn-facebook {
+    color: #ffffff;
+    border-color: #4267B2;
+    background-color: #4267B2;
+}
+
+.btn-linkedin {
+    color: #ffffff;
+    border-color: #0e76a8;
+    background-color: #0e76a8;
+}
+
+.btn-github {
+    color: #ffffff;
+    border-color: #211F1F;
+    background-color: #211F1F;
 }
