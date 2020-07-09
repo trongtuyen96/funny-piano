@@ -5,7 +5,8 @@
     <meta charset="utf-8">
     <link href="https://fonts.googleapis.com/css?family=Noto+Serif:400,400i" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
-    <title>🎹Funny Piano</title>
+   
+    <title>🎹 Funny Piano</title>
     <meta name="viewport" content="initial-scale=1.0, width=device-width">
 </head>
 
@@ -13,61 +14,61 @@
     <section id="wrap">
         <header>
             <h1>Funny Piano</h1>
-            <h2>Use your keyboard. Hover for hints.</h2>
+            <!-- <h2>Use your keyboard. Hover for hints.</h2> -->
         </header>
         <section id="main">
             <div class="nowplaying"></div>
             <div class="keys">
                 <div data-key="65" class="key" data-note="C">
-                    <span class="hints">A</span>
+                    <!-- <span class="hints">A</span> -->
                 </div>
                 <div data-key="87" class="key sharp" data-note="C#">
-                    <span class="hints">W</span>
+                    <!-- <span class="hints">W</span> -->
                 </div>
                 <div data-key="83" class="key" data-note="D">
-                    <span class="hints">S</span>
+                    <!-- <span class="hints">S</span> -->
                 </div>
                 <div data-key="69" class="key sharp" data-note="D#">
-                    <span class="hints">E</span>
+                    <!-- <span class="hints">E</span> -->
                 </div>
                 <div data-key="68" class="key" data-note="E">
-                    <span class="hints">D</span>
+                    <!-- <span class="hints">D</span> -->
                 </div>
                 <div data-key="70" class="key" data-note="F">
-                    <span class="hints">F</span>
+                    <!-- <span class="hints">F</span> -->
                 </div>
                 <div data-key="84" class="key sharp" data-note="F#">
-                    <span class="hints">T</span>
+                    <!-- <span class="hints">T</span> -->
                 </div>
                 <div data-key="71" class="key" data-note="G">
-                    <span class="hints">G</span>
+                    <!-- <span class="hints">G</span> -->
                 </div>
                 <div data-key="89" class="key sharp" data-note="G#">
-                    <span class="hints">Y</span>
+                    <!-- <span class="hints">Y</span> -->
                 </div>
                 <div data-key="72" class="key" data-note="A">
-                    <span class="hints">H</span>
+                    <!-- <span class="hints">H</span> -->
                 </div>
                 <div data-key="85" class="key sharp" data-note="A#">
-                    <span class="hints">U</span>
+                    <!-- <span class="hints">U</span> -->
                 </div>
                 <div data-key="74" class="key" data-note="B">
-                    <span class="hints">J</span>
+                    <!-- <span class="hints">J</span> -->
                 </div>
                 <div data-key="75" class="key" data-note="C">
-                    <span class="hints">K</span>
+                    <!-- <span class="hints">K</span> -->
                 </div>
                 <div data-key="79" class="key sharp" data-note="C#">
-                    <span class="hints">O</span>
+                    <!-- <span class="hints">O</span> -->
                 </div>
                 <div data-key="76" class="key" data-note="D">
-                    <span class="hints">L</span>
+                    <!-- <span class="hints">L</span> -->
                 </div>
                 <div data-key="80" class="key sharp" data-note="D#">
-                    <span class="hints">P</span>
+                    <!-- <span class="hints">P</span> -->
                 </div>
                 <div data-key="186" class="key" data-note="E">
-                    <span class="hints">;</span>
+                    <!-- <span class="hints">;</span> -->
                 </div>
             </div>
 
@@ -90,9 +91,26 @@
             <audio data-key="186" src="sounds/056.wav"></audio>
         </section>
     </section>
-    <video playsinline autoplay muted loop id="bgvid" poster="">
-        <source src="videos/space.mp4" type="video/mp4">
-    </video>
+
+    <div id="bg-video">
+        <!-- <video playsinline autoplay muted loop id="bgvid"> -->
+        <video autoplay muted loop id="bgvid">
+            <source src="videos/space.mp4" type="video/mp4">
+        </video>
+    </div>
+
+    <div id="controls">
+        <button class="btn btn-hint" id="hint">Hint</button>
+        <br>
+        <div class="box">
+            <select id="video">
+                <option value='space'>Space</option>
+                <option value='ember'>Ember</option>
+                <option value='sea'>Sea</option>
+                <option value='rain'>Rain</option>
+            </select>
+        </div>
+    </div>
 
     <footer>
         <p>Created by Tuyen Nguyen</p>
@@ -105,6 +123,7 @@
         </div>
     </footer>
 
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" crossorigin="anonymous"></script>
     <script src="./js/main.js"></script>
 </body>
 
