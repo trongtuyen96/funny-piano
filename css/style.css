@@ -80,9 +80,12 @@ h1 {
     z-index: 2;
 }
 
-.key:active {
+/* .key:active {
     transform: translateY(4px);
-}
+    transform: scale(.95);
+    border-color: #028ae9;
+    box-shadow: 0 0 1rem #028ae9;
+} */
 
 .key:not(.sharp) {
     float: left;
@@ -178,7 +181,7 @@ h1 {
 	display: inline-block;
     /* transform: translate(0, 50%); */
     margin-top: 20px;
-    border-radius: 0.25rem;
+    border-radius: .5rem;
     font-family: 'Noto Serif', serif;
     font-size: 1rem;
     font-weight: bold;

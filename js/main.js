@@ -2,11 +2,22 @@ const keys = document.querySelectorAll(".key"),
     note = document.querySelector(".nowplaying");
 // hints = document.querySelectorAll(".hints");
 
-document.querySelector('.key').addEventListener("click", playNote);
-document.querySelector('.sharp').addEventListener("click", playNote);
 videoSelector();
 
-function playNote(e) {
+function playNoteOnClick(e) {
+    console.log(e);
+    const dataKey = e.target.getAttribute("data-key");
+    const audio = document.querySelector(`audio[data-key="${dataKey}"]`);
+
+    const keyNote = e.target.getAttribute("data-note");
+
+    e.target.classList.add("playing");
+    note.innerHTML = keyNote;
+    audio.currentTime = 0;
+    audio.play();
+}
+
+function playNoteOnKeyboard(e) {
     const audio = document.querySelector(`audio[data-key="${e.keyCode}"]`),
         key = document.querySelector(`.key[data-key="${e.keyCode}"]`);
 
@@ -52,6 +63,5 @@ function videoSelector() {
 };
 
 keys.forEach(key => key.addEventListener("transitionend", removeTransition));
-
-window.addEventListener("keydown", playNote);
-
+keys.forEach(key => key.addEventListener("click", playNoteOnClick));
+window.addEventListener("keydown", playNoteOnKeyboard);
