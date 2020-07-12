@@ -2,7 +2,7 @@
   <br>
   <a><img src="https://github.com/trongtuyen96/funny-piano/blob/master/images/logo-trans.png" alt="logo" width="260px"></a>
   <br>
-  Real Weather
+  Funny Piano
   <br>
 </h1>
 
