@@ -62,7 +62,6 @@ function videoSelector() {
     }
 };
 
-// Open hint overlay
 function startHint() {
     for (var i = 0; i < hints.length; i++) {
         hints[i].setAttribute("style", " display: block; transition-delay:" + (i + 1) * 50 + "ms;");
@@ -72,7 +71,6 @@ function startHint() {
     }, 3000);
 }
 
-// Close hint overlay
 function endHint() {
     for (var i = 0; i < hints.length; i++) {
         hints[i].style.display = 'none';
