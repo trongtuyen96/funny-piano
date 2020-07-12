@@ -1,8 +1,9 @@
 const keys = document.querySelectorAll(".key"),
-    note = document.querySelector(".nowplaying");
-// hints = document.querySelectorAll(".hints");
+    note = document.querySelector(".nowplaying"),
+    hints = document.querySelectorAll(".hints");
 
 videoSelector();
+document.querySelector('#hint').addEventListener('click', startHint, true);
 
 function playNoteOnClick(e) {
     console.log(e);
@@ -43,9 +44,9 @@ function removeTransition(e) {
 // hints.forEach(hintsOn);
 
 function videoSelector() {
-    var select = document.getElementById("video");
+    var select = document.getElementById("video-selection");
     select.onchange = () => {
-        var vi = document.getElementById("video").value;
+        var vi = document.getElementById("video-selection").value;
         if (vi == 'space') {
             $("#bg-video").html("<video autoplay muted loop " + 'id="bgvid"><source  src="videos/space.mp4" type="video/mp4">');
         }
@@ -61,6 +62,23 @@ function videoSelector() {
         }
     }
 };
+
+// Open hint overlay
+function startHint() {
+    for (var i = 0; i < hints.length; i++) {
+        hints[i].setAttribute("style", " display: block; transition-delay:" + (i + 1) * 50 + "ms;");
+    }
+    setTimeout(function () {
+        endHint();
+    }, 3000);
+}
+
+// Close hint overlay
+function endHint() {
+    for (var i = 0; i < hints.length; i++) {
+        hints[i].style.display = 'none';
+    }
+}
 
 keys.forEach(key => key.addEventListener("transitionend", removeTransition));
 keys.forEach(key => key.addEventListener("click", playNoteOnClick));
