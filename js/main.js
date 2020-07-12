@@ -6,7 +6,6 @@ videoSelector();
 document.querySelector('#hint').addEventListener('click', startHint, true);
 
 function playNoteOnClick(e) {
-    console.log(e);
     const dataKey = e.target.getAttribute("data-key");
     const audio = document.querySelector(`audio[data-key="${dataKey}"]`);
 
@@ -18,9 +17,9 @@ function playNoteOnClick(e) {
     audio.play();
 }
 
-function playNoteOnKeyboard(e) {
-    const audio = document.querySelector(`audio[data-key="${e.keyCode}"]`),
-        key = document.querySelector(`.key[data-key="${e.keyCode}"]`);
+function playNoteOnKeyboard(event) {
+    const audio = document.querySelector(`audio[data-key="${event.keyCode}"]`),
+        key = document.querySelector(`.key[data-key="${event.keyCode}"]`);
 
     if (!key) return;
 
