@@ -51,13 +51,21 @@ function videoSelector() {
         }
         if (vi == 'ember') {
             $("#bg-video").html("<video autoplay muted loop " + 'id="video-frame"><source  src="videos/ember.mp4" type="video/mp4">');
-            console.log("ember");
         }
         if (vi == 'sea') {
             $("#bg-video").html("<video autoplay muted loop " + 'id="video-frame"><source  src="videos/sea.mp4" type="video/mp4">');
         }
         if (vi == 'rain') {
             $("#bg-video").html("<video autoplay muted loop " + 'id="video-frame"><source  src="videos/rain.mp4" type="video/mp4">');
+        }
+        if (vi == 'galaxy') {
+            $("#bg-video").html("<video autoplay muted loop " + 'id="video-frame"><source  src="videos/galaxy.mp4" type="video/mp4">');
+        }
+        if (vi == 'nature') {
+            $("#bg-video").html("<video autoplay muted loop " + 'id="video-frame"><source  src="videos/nature.mp4" type="video/mp4">');
+        }
+        if (vi == 'underwater') {
+            $("#bg-video").html("<video autoplay muted loop " + 'id="video-frame"><source  src="videos/underwater.mp4" type="video/mp4">');
         }
     }
 };
