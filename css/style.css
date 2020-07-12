@@ -2,6 +2,8 @@ body {
     background: #000;
     font-family: 'Noto Serif', serif;
     -webkit-font-smoothing: antialiased;
+    -webkit-user-select: none;
+    /* -webkit-tap-highlight-color: transparent; */
     text-align: center;
 }
 
@@ -68,6 +70,7 @@ h1 {
     margin: 40px auto 0;
     /* cursor: none; */
     cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
 }
 
 .key {
@@ -78,6 +81,7 @@ h1 {
     display: block;
     box-sizing: border-box;
     z-index: 2;
+    /* -webkit-tap-highlight-color: transparent; */
 }
 
 /* .key:active {
@@ -92,6 +96,7 @@ h1 {
     width: 10%;
     height: 100%;
     background: rgba(255, 255, 255, .8);
+    /* -webkit-tap-highlight-color: transparent; */
     /* background: #ffffff; */
 }
 
@@ -103,6 +108,7 @@ h1 {
     color: #eee;
     top: 0;
     z-index: 3;
+    /* -webkit-tap-highlight-color: transparent; */
 }
 
 .key[data-key="87"] {
