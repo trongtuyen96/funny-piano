@@ -41,9 +41,7 @@
 ## Screenshots
 <h3 align="center">
   <a><img src="https://github.com/trongtuyen96/funny-piano/blob/master/covers/Capture-1.PNG" alt="capture-1" width="800"></a>
-	
   <a><img src="https://github.com/trongtuyen96/funny-piano/blob/master/covers/Capture-2.PNG" alt="capture-2" width="800"></a>
-  
   <a><img src="https://github.com/trongtuyen96/funny-piano/blob/master/covers/Capture-3.PNG" alt="capture-3" width="800"></a>
 </h3>
 
