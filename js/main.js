@@ -47,17 +47,17 @@ function videoSelector() {
     select.onchange = () => {
         var vi = document.getElementById("video-selection").value;
         if (vi == 'space') {
-            $("#bg-video").html("<video autoplay muted loop " + 'id="bgvid"><source  src="videos/space.mp4" type="video/mp4">');
+            $("#bg-video").html("<video autoplay muted loop " + 'id="video-frame"><source  src="videos/space.mp4" type="video/mp4">');
         }
         if (vi == 'ember') {
-            $("#bg-video").html("<video autoplay muted loop " + 'id="bgvid"><source  src="videos/ember.mp4" type="video/mp4">');
+            $("#bg-video").html("<video autoplay muted loop " + 'id="video-frame"><source  src="videos/ember.mp4" type="video/mp4">');
             console.log("ember");
         }
         if (vi == 'sea') {
-            $("#bg-video").html("<video autoplay muted loop " + 'id="bgvid"><source  src="videos/sea.mp4" type="video/mp4">');
+            $("#bg-video").html("<video autoplay muted loop " + 'id="video-frame"><source  src="videos/sea.mp4" type="video/mp4">');
         }
         if (vi == 'rain') {
-            $("#bg-video").html("<video autoplay muted loop " + 'id="bgvid"><source  src="videos/rain.mp4" type="video/mp4">');
+            $("#bg-video").html("<video autoplay muted loop " + 'id="video-frame"><source  src="videos/rain.mp4" type="video/mp4">');
         }
     }
 };
